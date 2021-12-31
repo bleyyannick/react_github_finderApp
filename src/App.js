@@ -4,10 +4,11 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import NotFound from './pages/NotFound'; 
 import About from './pages/About'; 
-import Home from './pages/Home'; 
+import Home from './pages/Home';  
 
 function App() {
   return (
+
     <Router>
          <div className="flex flex-col justify-between h-screen">
               <Navbar />
@@ -17,13 +18,12 @@ function App() {
                   <Route path="/about" element={<About />}/>
                   <Route path="/notfound" element={<NotFound />}/>
                   <Route path="/*" element={<NotFound />}/>
-
-                 
                 </Routes>
               </main>
               <Footer />
          </div>
     </Router>
+
   );
 }
 
